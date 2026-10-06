@@ -1,0 +1,138 @@
+{
+  "home": {
+    "hero": {
+      "title": "Planea tu experiencia",
+      "subtitle": "Selecciona tu tour privado y obtén una cotización inmediata por WhatsApp.",
+      "select_label": "Seleccionar Tour / Traslado",
+      "name_label": "Nombre Completo",
+      "name_placeholder": "Juan Pérez",
+      "date_label": "Fecha Preferida",
+      "price_label": "Precio Estimado",
+      "button": "Cotizar por WhatsApp",
+      "view_details": "Ver detalles completos",
+      "greeting": "¡Hola! Soy {name}. Estoy interesado en reservar el *{tour}* para el *{date}*."
+    },
+    "tours": {
+      "guatape": "Guatapé",
+      "cafe": "Experiencia Finca Cafetera",
+      "medellin": "Medellín",
+      "aeropuerto": "Traslado VIP Aeropuerto JMC"
+    },
+    "tour_details": {
+    "guatape": {
+      "image_count": 6,
+      "title": "Guatapé",
+      "description": "Experimenta los colores vibrantes de Guatapé y sube a la imponente Piedra del Peñol para disfrutar de vistas panorámicas. Un viaje privado y premium adaptado a tu ritmo.",
+      "duration": "8 - 10 Horas",
+      "includes": [
+        "Transporte Privado VIP (SUV)",
+        "Guía Experto Bilingüe",
+        "Entradas a la Piedra del Peñol",
+        "Paseo en bote privado",
+        "Hidratación y snacks premium"
+      ],
+      "price": 280,
+      "book_button": "Reservar por WhatsApp",
+      "back_button": "Volver al Inicio",
+      "about_title": "Acerca de esta experiencia",
+      "includes_title": "Qué incluye",
+      "duration_label": "Duración",
+      "fee_note": "Sin tarifas ocultas. Paga directamente el día del tour."
+    },
+    "medellin": {
+          "image_count": 5,
+          "title": "Medellín",
+          "description": "Descubre la increíble transformación de Medellín. Recorre los puntos clave de la ciudad y sumérgete en el vibrante arte urbano y la historia de las escaleras eléctricas de la Comuna 13.",
+          "duration": "4 - 5 Horas",
+          "includes": [
+            "Transporte Privado VIP",
+            "Guía Experto Bilingüe",
+            "Tour de Graffiti en Comuna 13",
+            "Degustación de snacks locales"
+          ],
+          "price": 120,
+          "book_button": "Solicitar por WhatsApp",
+          "back_button": "Volver al Inicio",
+          "about_title": "Acerca de esta experiencia",
+          "includes_title": "Qué incluye",
+          "duration_label": "Duración",
+          "fee_note": "Sin tarifas ocultas. Pago directo el día del tour."
+        },
+        "cafe": {
+          "image_count": 4,
+          "title": "Experiencia Finca Cafetera",
+          "description": "Adéntrate en las montañas de Antioquia y descubre el proceso artesanal del café colombiano, desde la siembra hasta la taza, en una auténtica finca tradicional.",
+          "duration": "4 - 5 Horas",
+          "includes": [
+            "Transporte Privado VIP",
+            "Guía Experto Bilingüe",
+            "Tour completo del proceso del café",
+            "Cata de cafés especiales"
+          ],
+          "price": 150,
+          "book_button": "Solicitar por WhatsApp",
+          "back_button": "Volver al Inicio",
+          "about_title": "Acerca de esta experiencia",
+          "includes_title": "Qué incluye",
+          "duration_label": "Duración",
+          "fee_note": "Sin tarifas ocultas. Pago directo el día del tour."
+        },
+        "aeropuerto": {
+          "image_count": 3,
+          "title": "VIP Airport Transfer (MDE)",
+          "description": "Comienza o termina tu viaje con el máximo confort. Servicio de traslado privado en vehículos premium desde o hacia el Aeropuerto Internacional José María Córdova.",
+          "duration": "45 - 60 Minutos",
+          "includes": [
+            "Transporte Privado VIP (SUV)",
+            "Conductor profesional bilingüe",
+            "Asistencia con equipaje",
+            "Botellas de agua a bordo"
+          ],
+          "price": 80,
+          "book_button": "Solicitar por WhatsApp",
+          "back_button": "Volver al Inicio",
+          "about_title": "Acerca del servicio",
+          "includes_title": "Qué incluye",
+          "duration_label": "Duración",
+          "fee_note": "Precio por vehículo, no por persona."
+        }
+  },
+  "collection": {
+      "title": "Experiencias de Autor",
+      "subtitle": "Descubre nuestros tours privados cuidadosamente seleccionados en Medellín y Antioquia. Diseñados a tu ritmo.",
+      "explore_button": "Ver Detalles"
+    },
+    "custom_tour": {
+      "title": "Itinerarios a la Medida",
+      "subtitle": "¿Buscas algo único? Diseña una experiencia personalizada en Medellín con nuestro concierge privado.",
+      "button": "Contactar Concierge",
+      "message": "¡Hola! Me gustaría diseñar un tour privado a la medida en Medellín."
+    },
+    "about": {
+      "tag": "Nuestra Filosofía",
+      "title": "No somos una agencia. Somos tu concierge privado.",
+      "description": "Diseñamos experiencias a la medida para viajeros exigentes. Olvídate de los itinerarios rígidos y las multitudes; en MR, tú marcas el ritmo. Te conectamos con la verdadera esencia de Medellín a través de vehículos premium, guías expertos locales y un nivel de servicio impecable.",
+      "reviews_title": "Lo que dicen nuestros clientes",
+      "google_title": "Excelencia comprobada",
+      "google_text": "Calificados con 5 estrellas en Google Reviews",
+      "google_button": "Dejar una reseña en Google",
+      "reviews": [
+        {
+          "name": "Sarah Jenkins",
+          "text": "Una experiencia increíble en Guatapé. El servicio fue impecable desde la recogida en el hotel hasta el regreso. Nuestro guía conocía cada rincón.",
+          "date": "Hace 2 semanas"
+        },
+        {
+          "name": "Michael T.",
+          "text": "No suelo dejar reseñas, pero el nivel de detalle de MR Medellín es de otro nivel. La SUV estaba inmaculada y la finca cafetera fue muy exclusiva.",
+          "date": "Hace 1 mes"
+        },
+        {
+          "name": "David & Emma",
+          "text": "Contratamos el servicio de transfer desde el aeropuerto y terminamos agendando todos nuestros tours con ellos. Lujo, puntualidad y calidez.",
+          "date": "Hace 2 meses"
+        }
+      ]
+    }
+  }
+}

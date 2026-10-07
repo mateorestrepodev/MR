@@ -15,7 +15,8 @@ export async function generateMetadata({
   const isEs = resolvedParams.lang === "es";
 
   return {
-    title: "MR Medellin Private Tours | Luxury Travel & Concierge",
+    metadataBase: new URL("https://mrtours.co"),
+    title: "MR Medellin Private Tours | Take Your Time!",
     description: isEs
       ? "Experiencias de viaje premium y traslados VIP en Medellín. Tours privados a Guatapé, Comuna 13, Pueblito Paisa, Fincas Cafeteras y traslados aeropuerto MDE."
       : "Premium travel experiences and VIP transfers in Medellin. Private tours to Guatape, Comuna 13, Coffee Farms, and MDE airport concierge service.",
@@ -25,7 +26,7 @@ export async function generateMetadata({
 
     // Configuración para WhatsApp, Facebook, LinkedIn
     openGraph: {
-      title: "MR Medellin Private Tours | Luxury Travel",
+      title: "MR Medellin Private Tours | Take Your Time!",
       description: isEs
         ? "Tu concierge privado en Medellín. Descubre Guatapé y la cultura local con servicio VIP."
         : "Your private concierge in Medellin. Discover Guatape and local culture with VIP service.",

@@ -31,6 +31,14 @@ export async function generateMetadata({
         ? "Tu concierge privado en Medellín. Descubre Guatapé y la cultura local con servicio VIP."
         : "Your private concierge in Medellin. Discover Guatape and local culture with VIP service.",
       url: "https://mrtours.co",
+      images: [
+        {
+          url: "https://mrtours.co/og-image.jpg",
+          width: 1200,
+          height: 630,
+          alt: "MR Medellin Private Tours",
+        },
+      ],
       siteName: "MR Medellin Private Tours",
       type: "website",
     },

@@ -30,7 +30,7 @@ export default function Navbar({ lang }: { lang: string }) {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
         <Link href={`/${lang}`} className="flex items-center">
-          <div className="relative w-12 h-12 md:w-18 md:h-18">
+          <div className="relative w-16 h-16 md:w-20 md:h-20">
             <Image
               src="/logo/logomr.svg"
               alt="MR Medellin Private Tours"
@@ -44,7 +44,7 @@ export default function Navbar({ lang }: { lang: string }) {
         {/* Controles */}
         <div className="flex items-center gap-8">
           {/* Switch de Idioma Editorial */}
-          <div className="flex items-center text-xs tracking-widest font-semibold">
+          <div className="flex items-center text-[11px] tracking-widest font-semibold">
             <Link
               href={redirectedPathName("es")}
               className={`transition-colors ${lang === "es" ? "text-[#202522]" : "text-[#737772] hover:text-[#202522]"}`}
@@ -64,7 +64,7 @@ export default function Navbar({ lang }: { lang: string }) {
           <Link
             href={`/${lang}#tours`}
             onClick={handleExploreClick}
-            className="px-4 py-2 text-xs tracking-widest font-bold text-[#FFFFFF] bg-[#29483D] rounded-md hover:bg-[#1C302A] transition-colors duration-300"
+            className="px-4 py-2 text-[9px] tracking-widest font-bold text-[#FFFFFF] bg-[#29483D] rounded-md hover:bg-[#1C302A] transition-colors duration-300"
           >
             {lang === "es" ? "EXPLORAR →" : "EXPLORE →"}
           </Link>

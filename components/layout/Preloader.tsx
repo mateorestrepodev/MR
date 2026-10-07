@@ -73,8 +73,8 @@ export default function Preloader() {
       <div
         className={`
           relative
-          h-24
-          w-24
+          h-32
+          w-32
           md:h-40
           md:w-40
           transition-transform

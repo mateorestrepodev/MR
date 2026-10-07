@@ -167,11 +167,8 @@ export default function BookingHero({ dict, lang }: BookingHeroProps) {
                   className="h-[48px] w-full cursor-pointer appearance-none rounded-md border border-[#D9D9D2] bg-white px-4 pr-10 text-sm font-light text-[#202522] outline-none transition-all duration-300 focus:border-[#29483D] focus:ring-1 focus:ring-[#29483D]"
                 >
                   <option value="guatape">{dict.tours.guatape}</option>
-
                   <option value="cafe">{dict.tours.cafe}</option>
-
                   <option value="medellin">{dict.tours.medellin}</option>
-
                   <option value="aeropuerto">{dict.tours.aeropuerto}</option>
                 </select>
 
@@ -226,7 +223,7 @@ export default function BookingHero({ dict, lang }: BookingHeroProps) {
                   id="date"
                   value={selectedDate}
                   onChange={(e) => setSelectedDate(e.target.value)}
-                  className="h-[48px] w-full cursor-pointer rounded-md border border-[#D9D9D2] bg-white px-4 text-sm font-light text-[#202522] outline-none transition-all duration-300 focus:border-[#29483D] focus:ring-1 focus:ring-[#29483D]"
+                  className="min-w-0 appearance-none h-[48px] w-full cursor-pointer rounded-md border border-[#D9D9D2] bg-white px-3 sm:px-4 text-sm font-light text-[#202522] outline-none transition-all duration-300 focus:border-[#29483D] focus:ring-1 focus:ring-[#29483D]"
                   required
                 />
               </div>
@@ -257,7 +254,7 @@ export default function BookingHero({ dict, lang }: BookingHeroProps) {
               {/* Botón */}
               <button
                 type="submit"
-                className="group flex h-[48px] w-full items-center justify-center gap-3 rounded-md bg-[#29483D] px-7 text-[10px] font-semibold uppercase tracking-[0.18em] text-white shadow-sm transition-all duration-300 hover:bg-[#1C302A] sm:w-auto"
+                className="group flex h-[48px] w-full sm:w-auto items-center justify-center gap-2 sm:gap-3 rounded-md bg-[#29483D] px-4 sm:px-7 text-[9px] sm:text-[10px] font-semibold uppercase tracking-[0.1em] sm:tracking-[0.18em] text-white shadow-sm transition-all duration-300 hover:bg-[#1C302A]"
               >
                 {dict.hero.button}
 
@@ -266,7 +263,7 @@ export default function BookingHero({ dict, lang }: BookingHeroProps) {
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="1.8"
-                  className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
+                  className="h-4 w-4 shrink-0 transition-transform duration-300 group-hover:translate-x-1"
                 >
                   <path d="M5 12h14" />
                   <path d="m12 5 7 7-7 7" />

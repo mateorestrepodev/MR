@@ -87,7 +87,7 @@ export default function Footer({ lang }: { lang: string }) {
       <div className="border-t border-[#D9D9D2]/10 py-5 md:py-2">
         <div className="flex flex-col items-center justify-center text-center gap-3 md:flex-row md:justify-between md:text-left">
           <span className="text-[11px] font-light tracking-wide text-[#D9D9D2]/40">
-            © {currentYear} MR Medellín Private Tours.
+            © 2023 MR Medellín Private Tours.
           </span>
 
           <span className="text-[10px] font-medium uppercase tracking-[0.22em] text-[#D9D9D2]/35">

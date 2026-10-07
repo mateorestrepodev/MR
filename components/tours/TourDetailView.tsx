@@ -48,16 +48,18 @@ export default function TourDetailView({
     document.body.style.overflow = "auto";
   };
 
-  const nextImage = () => {
+  const nextImage = (e?: React.MouseEvent) => {
+    if (e) e.stopPropagation();
     setCurrentImageIdx((prev) => (prev + 1) % images.length);
   };
 
-  const prevImage = () => {
+  const prevImage = (e?: React.MouseEvent) => {
+    if (e) e.stopPropagation();
     setCurrentImageIdx((prev) => (prev === 0 ? images.length - 1 : prev - 1));
   };
 
   return (
-    <section className="w-full min-h-screen bg-[#F2F1EC] py-8  px-4 md:px-8">
+    <section className="w-full min-h-screen bg-[#F2F1EC] py-8 px-4 md:px-8">
       <div className="max-w-6xl mx-auto flex flex-col gap-10">
         {/* Cabecera */}
         <div className="flex flex-col gap-4">
@@ -82,10 +84,12 @@ export default function TourDetailView({
           </h1>
         </div>
 
-        {/* Galería Bento */}
-        <div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-3 h-[300px] md:h-[60vh] min-h-[400px] max-h-[600px] rounded-md overflow-hidden">
+        {/* =========================================
+            GALERÍA DESKTOP (Bento Grid)
+            ========================================= */}
+        <div className="hidden md:grid grid-cols-4 grid-rows-2 gap-3 h-[60vh] min-h-[400px] max-h-[600px] rounded-md overflow-hidden">
           <div
-            className="md:col-span-2 md:row-span-2 relative cursor-pointer group bg-[#D9D9D2]/20"
+            className="col-span-2 row-span-2 relative cursor-pointer group bg-[#D9D9D2]/20"
             onClick={() => openModal(0)}
           >
             {images[0] && (
@@ -102,7 +106,7 @@ export default function TourDetailView({
           {images.slice(1, 5).map((img, idx) => (
             <div
               key={idx}
-              className="hidden md:block relative cursor-pointer group bg-[#D9D9D2]/20"
+              className="relative cursor-pointer group bg-[#D9D9D2]/20"
               onClick={() => openModal(idx + 1)}
             >
               <Image
@@ -120,18 +124,65 @@ export default function TourDetailView({
               )}
             </div>
           ))}
+        </div>
+
+        {/* =========================================
+            GALERÍA MOBILE (Imagen Principal + Minis 3x2)
+            ========================================= */}
+        <div className="flex flex-col gap-2 md:hidden">
+          <div
+            className="relative w-full h-[350px] rounded-md overflow-hidden cursor-pointer"
+            onClick={() => openModal(0)}
+          >
+            {images[0] && (
+              <Image
+                src={images[0]}
+                alt={`${tour.title} main mobile`}
+                fill
+                className="object-cover"
+                priority
+              />
+            )}
+          </div>
+
+          {images.length > 1 && (
+            <div className="grid grid-cols-3 gap-2">
+              {images.slice(1, 7).map((img, idx) => (
+                <div
+                  key={idx}
+                  className="relative aspect-square rounded-md overflow-hidden cursor-pointer bg-[#D9D9D2]/20"
+                  onClick={() => openModal(idx + 1)}
+                >
+                  <Image
+                    src={img}
+                    alt={`Thumb ${idx + 1}`}
+                    fill
+                    className="object-cover"
+                  />
+                  {idx === 5 && images.length > 7 && (
+                    <div className="absolute inset-0 bg-[#1C302A]/60 flex items-center justify-center">
+                      <span className="text-[#FFFFFF] font-medium text-lg tracking-wider">
+                        +{images.length - 7}
+                      </span>
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          )}
 
           <button
             onClick={() => openModal(0)}
-            className="md:hidden absolute bottom-4 right-4 bg-[#FFFFFF]/90 backdrop-blur-md px-4 py-2 rounded-md text-xs font-bold tracking-widest text-[#202522] shadow-sm"
+            className="mt-2 w-full py-3.5 rounded-md border border-[#202522]/20 text-[#202522] text-[10px] font-bold tracking-widest uppercase hover:bg-[#202522] hover:text-[#FFFFFF] transition-colors"
           >
-            1 / {images.length}
+            {lang === "es" ? "Ver todas las fotos" : "View all photos"}
           </button>
         </div>
 
-        {/* Contenido Inferior */}
+        {/* =========================================
+            CONTENIDO INFERIOR
+            ========================================= */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mt-6 relative">
-          {/* Detalles (Izquierda) */}
           <div className="lg:col-span-7 space-y-12">
             <div>
               <h3 className="text-[10px] font-bold uppercase tracking-widest text-[#737772] mb-5">
@@ -172,7 +223,6 @@ export default function TourDetailView({
             </div>
           </div>
 
-          {/* Panel Sticky (Derecha) */}
           <div className="lg:col-span-5 relative">
             <div className="sticky top-32 bg-[#FFFFFF] p-8 lg:p-10 rounded-md shadow-[0_20px_60px_rgba(25,35,30,0.06)] border border-[#D9D9D2]/30 flex flex-col gap-8">
               <div className="flex flex-col gap-6 border-b border-[#D9D9D2]/50 pb-8">
@@ -187,7 +237,7 @@ export default function TourDetailView({
 
                 <div className="flex flex-col">
                   <span className="block text-[10px] font-bold uppercase tracking-widest text-[#737772] mb-1">
-                    Estimated Price
+                    {lang === "es" ? "Precio Estimado" : "Estimated Price"}
                   </span>
                   <div className="flex items-baseline">
                     <span className="text-4xl lg:text-5xl font-light text-[#202522] tracking-tight">
@@ -227,16 +277,19 @@ export default function TourDetailView({
         </div>
       </div>
 
-      {/* --- MODAL LIGHTBOX --- */}
+      {/* =========================================
+          MODAL LIGHTBOX
+          ========================================= */}
       {isModalOpen && (
         <div className="fixed inset-0 z-[100] bg-[#1C302A]/95 flex items-center justify-center backdrop-blur-md">
-          <div className="absolute top-0 w-full p-6 flex justify-between items-center text-[#FFFFFF] z-20">
+          {/* Header del Modal */}
+          <div className="absolute top-0 w-full p-6 flex justify-between items-center text-[#FFFFFF] z-50">
             <span className="text-xs tracking-widest font-bold uppercase">
               {currentImageIdx + 1} / {images.length}
             </span>
             <button
               onClick={closeModal}
-              className="p-2 hover:bg-[#FFFFFF]/10 rounded-md transition-colors"
+              className="p-3 bg-black/30 hover:bg-black/50 rounded-full transition-colors backdrop-blur-sm"
             >
               <svg
                 width="24"
@@ -251,9 +304,10 @@ export default function TourDetailView({
             </button>
           </div>
 
+          {/* Flecha Izquierda (Siempre visible) */}
           <button
             onClick={prevImage}
-            className="absolute left-4 md:left-8 p-3 bg-[#FFFFFF]/10 hover:bg-[#FFFFFF]/20 rounded-md text-[#FFFFFF] transition-all z-20 hidden md:block"
+            className="absolute left-3 md:left-8 p-3 md:p-4 bg-black/40 hover:bg-black/70 rounded-full text-white transition-all z-50 backdrop-blur-sm"
           >
             <svg
               width="24"
@@ -267,6 +321,7 @@ export default function TourDetailView({
             </svg>
           </button>
 
+          {/* Contenedor de la Imagen */}
           <div className="relative w-full max-w-6xl h-[70vh] md:h-[85vh] z-10">
             {images[currentImageIdx] && (
               <Image
@@ -279,9 +334,10 @@ export default function TourDetailView({
             )}
           </div>
 
+          {/* Flecha Derecha (Siempre visible) */}
           <button
             onClick={nextImage}
-            className="absolute right-4 md:right-8 p-3 bg-[#FFFFFF]/10 hover:bg-[#FFFFFF]/20 rounded-md text-[#FFFFFF] transition-all z-20 hidden md:block"
+            className="absolute right-3 md:right-8 p-3 md:p-4 bg-black/40 hover:bg-black/70 rounded-full text-white transition-all z-50 backdrop-blur-sm"
           >
             <svg
               width="24"
@@ -294,15 +350,6 @@ export default function TourDetailView({
               <path d="M9 18l6-6-6-6" />
             </svg>
           </button>
-
-          <div
-            className="absolute inset-y-0 left-0 w-1/2 z-10 md:hidden"
-            onClick={prevImage}
-          />
-          <div
-            className="absolute inset-y-0 right-0 w-1/2 z-10 md:hidden"
-            onClick={nextImage}
-          />
         </div>
       )}
     </section>

@@ -3,7 +3,9 @@ import "../globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 
-// Generación Dinámica de SEO Global (Cambia según idioma)
+// ==========================================
+// 1. METADATOS GLOBALES (Google, Redes Sociales, WhatsApp)
+// ==========================================
 export async function generateMetadata({
   params,
 }: {
@@ -15,18 +17,32 @@ export async function generateMetadata({
   return {
     title: "MR Medellin Private Tours | Luxury Travel & Concierge",
     description: isEs
-      ? "Experiencias de viaje premium, traslados VIP y servicio de concierge privado en Medellín, Colombia. Diseñamos itinerarios a la medida."
-      : "Premium travel experiences, VIP transfers, and private concierge service in Medellín, Colombia. Tailor-made itineraries.",
+      ? "Experiencias de viaje premium y traslados VIP en Medellín. Tours privados a Guatapé, Comuna 13, Pueblito Paisa, Fincas Cafeteras y traslados aeropuerto MDE."
+      : "Premium travel experiences and VIP transfers in Medellin. Private tours to Guatape, Comuna 13, Coffee Farms, and MDE airport concierge service.",
     keywords: isEs
-      ? "Tours privados Medellín, Guatapé tour de lujo, Concierge Medellín, Transporte VIP aeropuerto MDE, Comuna 13 privado"
-      : "Medellin private tours, Guatape luxury tour, Medellin concierge, VIP airport transfer MDE, Comuna 13 private guide",
+      ? "Tours privados Medellín, Guatapé tour de lujo, Concierge Medellín, Transporte VIP aeropuerto MDE, Comuna 13 privado, Pueblito Paisa, Tour del Café Medellín"
+      : "Medellin private tours, Guatape luxury tour, Medellin concierge, VIP airport transfer MDE, Comuna 13 private guide, Coffee tour Medellin",
+
+    // Configuración para WhatsApp, Facebook, LinkedIn
     openGraph: {
       title: "MR Medellin Private Tours | Luxury Travel",
       description: isEs
-        ? "Tu concierge privado en Medellín."
-        : "Your private concierge in Medellin.",
+        ? "Tu concierge privado en Medellín. Descubre Guatapé y la cultura local con servicio VIP."
+        : "Your private concierge in Medellin. Discover Guatape and local culture with VIP service.",
+      url: "https://mrtours.co",
+      siteName: "MR Medellin Private Tours",
       type: "website",
     },
+
+    // Configuración para X (Twitter)
+    twitter: {
+      card: "summary_large_image",
+      title: "MR Medellin Private Tours",
+      description: "Luxury Travel & Concierge in Medellin, Colombia.",
+    },
+
+    // Le decimos a Google y a las IA de qué trata tu página
+    category: "travel",
   };
 }
 
@@ -39,17 +55,20 @@ export default async function RootLayout({
 }) {
   const resolvedParams = await params;
 
-  // JSON-LD: El arma secreta del GEO-SEO.
-  // Esto vincula matemáticamente tu web con Google Maps.
+  // ==========================================
+  // 2. JSON-LD: EL ARMA SECRETA PARA GOOGLE MAPS Y LAS IA (ChatGPT, Gemini)
+  // ==========================================
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "TravelAgency",
     name: "MR Medellin Private Tours",
-    image: "https://www.tusitioweb.com/logo/logomr.svg", // Cambiarás esto por tu dominio real
+    // Asegúrate de que esta URL exista (lo haremos en el Paso 2)
+    image: "https://mrtours.co/logo/logomrletra.png",
     description:
-      "Premium private tours and concierge service in Medellín, Colombia.",
-    url: "https://www.tusitioweb.com",
+      "Premium private tours, VIP transportation, and concierge service in Medellín, Colombia. Specializing in Guatapé, Comuna 13, and Coffee Tours.",
+    url: "https://mrtours.co",
     telephone: "+573181686591",
+    priceRange: "$$$",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Medellín",
@@ -59,15 +78,21 @@ export default async function RootLayout({
     geo: {
       "@type": "GeoCoordinates",
       latitude: 6.2442,
-      longitude: -75.5812, // Coordenadas centrales de Medellín
+      longitude: -75.5812, // Centro de Medellín
     },
-    priceRange: "$$$",
+    // Esto es CLAVE para la Inteligencia Artificial (AIO): Le dice exactamente qué ofreces
+    makesOffer: [
+      { "@type": "Offer", name: "Private Tour to Guatapé" },
+      { "@type": "Offer", name: "VIP Airport Transfer (MDE)" },
+      { "@type": "Offer", name: "Comuna 13 Private Guide" },
+      { "@type": "Offer", name: "Coffee Farm Experience" },
+    ],
   };
 
   return (
     <html lang={resolvedParams.lang} className="scroll-smooth">
       <head>
-        {/* Inyectamos la data estructurada para los robots de Google */}
+        {/* Inyectamos la data estructurada para los robots de Google y las IA */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

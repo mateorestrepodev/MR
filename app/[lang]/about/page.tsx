@@ -1,5 +1,6 @@
 import { getDictionary } from "@/app/lib/get-dictionary";
 import Link from "next/link";
+import Image from "next/image";
 
 // Definimos la estructura de la reseña para TypeScript
 interface Review {
@@ -20,56 +21,74 @@ export default async function AboutPage({
   const googleReviewLink = "https://g.page/r/TU_CODIGO/review"; // Reemplaza con tu link
 
   return (
-    <main className="min-h-screen bg-[#F2F1EC] py-20 px-4 md:px-8">
-      <div className="max-w-4xl mx-auto flex flex-col gap-24">
-        {/* Cabecera / Filosofía */}
-        <div className="flex flex-col gap-8 text-center items-center pt-10">
+    <main className="min-h-screen bg-[#F2F1EC] py-6 px-4 md:px-8">
+      {/* Contenedor principal ensanchado para el layout 50/50 */}
+      <div className="max-w-6xl mx-auto flex flex-col ">
+        {/* Botón de Volver (Alineado a la izquierda) */}
+        <div className="w-full">
           <Link
             href={`/${resolvedParams.lang}`}
-            className="text-[#737772] hover:text-[#202522] transition-colors text-[10px] font-bold uppercase tracking-widest flex items-center gap-2 mb-4"
+            className="inline-flex items-center gap-3 text-[#737772] hover:text-[#202522] transition-colors text-[9px] font-bold uppercase tracking-[0.2em]"
           >
             <svg
-              width="14"
-              height="14"
+              width="15"
+              height="15"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              strokeWidth="2"
+              strokeWidth="1.8"
             >
               <path d="M19 12H5M12 19l-7-7 7-7" />
             </svg>
             {resolvedParams.lang === "es" ? "Volver al Inicio" : "Back to Home"}
           </Link>
+        </div>
 
-          <span className="block text-[10px] font-bold uppercase tracking-widest text-[#737772]">
-            {aboutDict.tag}
-          </span>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-light text-[#202522] tracking-tight leading-tight">
-            {aboutDict.title}
-          </h1>
-          <p className="text-[#737772] text-base md:text-lg font-light leading-relaxed max-w-2xl mt-4">
-            {aboutDict.description}
-          </p>
+        {/* Hero Section: Texto a la Izquierda / Foto a la Derecha */}
+        <div className="flex flex-col-reverse lg:flex-row items-center gap-16 lg:gap-20">
+          {/* Columna Izquierda: Filosofía y Texto */}
+          <div className="w-full lg:w-1/2 flex flex-col items-start text-left my-10">
+            <span className="block text-[10px] font-bold uppercase tracking-[0.2em] text-[#737772] mb-5">
+              {aboutDict.tag}
+            </span>
+            <h1 className="text-4xl md:text-5xl lg:text-[64px] font-light text-[#202522] tracking-tight leading-[1.1] mb-8">
+              {aboutDict.title}
+            </h1>
+            <p className="text-[#737772] text-sm md:text-base font-light leading-relaxed max-w-lg whitespace-pre-line">
+              {aboutDict.description}
+            </p>
+          </div>
+
+          {/* Columna Derecha: Fotografía Editorial */}
+          <div className="w-full lg:w-1/2 relative h-[450px] md:h-[550px]  w-full rounded-sm overflow-hidden bg-[#D9D9D2]/30">
+            <Image
+              src="/mateo.webp" // Asegúrate de tener esta imagen en tu carpeta public
+              alt="Mateo Restrepo - Founder of MR Medellin Private Tours"
+              fill
+              priority
+              className="object-cover object-center grayscale hover:grayscale-0 transition-all duration-700"
+            />
+          </div>
         </div>
 
         {/* Citas Editoriales (Reseñas simuladas de Google) */}
-        <div className="flex flex-col gap-12 border-t border-[#D9D9D2]/50 pt-16">
-          <h2 className="text-[10px] font-bold uppercase tracking-widest text-[#737772] text-center mb-4">
+        <div className="flex flex-col gap-12 border-t border-[#D9D9D2]/70 pt-20">
+          <h2 className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#737772] text-center mb-2">
             {aboutDict.reviews_title}
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {aboutDict.reviews.map((review: Review, idx: number) => (
+            {aboutDict.reviews?.map((review: Review, idx: number) => (
               <div
                 key={idx}
-                className="bg-[#FFFFFF] p-8 rounded-2xl flex flex-col justify-between gap-6 shadow-[0_20px_60px_rgba(25,35,30,0.03)] border border-[#D9D9D2]/30"
+                className="bg-[#FFFFFF] p-8 md:p-10 rounded-lg flex flex-col justify-between gap-6 shadow-[0_15px_40px_rgba(25,35,30,0.03)] border border-[#D9D9D2]/40"
               >
-                <div className="flex text-[#29483D] mb-2">
+                <div className="flex text-[#29483D] mb-1">
                   {[...Array(5)].map((_, i) => (
                     <svg
                       key={i}
-                      width="14"
-                      height="14"
+                      width="13"
+                      height="13"
                       viewBox="0 0 24 24"
                       fill="currentColor"
                     >
@@ -77,14 +96,14 @@ export default async function AboutPage({
                     </svg>
                   ))}
                 </div>
-                <p className="text-[#202522] text-sm font-medium leading-relaxed italic">
+                <p className="text-[#202522] text-[13px] font-light leading-relaxed italic">
                   {review.text}
                 </p>
-                <div>
-                  <h4 className="text-[#202522] text-xs font-bold tracking-wide uppercase">
+                <div className="pt-4 border-t border-[#D9D9D2]/30 mt-2">
+                  <h4 className="text-[#202522] text-[10px] font-bold tracking-widest uppercase">
                     {review.name}
                   </h4>
-                  <span className="text-[#737772] text-[10px]">
+                  <span className="text-[#737772] text-[9px] mt-1 block">
                     {review.date}
                   </span>
                 </div>
@@ -94,14 +113,14 @@ export default async function AboutPage({
         </div>
 
         {/* Tarjeta final de Call to Action hacia Google */}
-        <div className="bg-[#29483D] rounded-2xl p-10 lg:p-16 flex flex-col lg:flex-row items-center justify-between gap-10 shadow-lg relative overflow-hidden mb-10">
-          <div className="absolute -top-24 -right-24 w-64 h-64 bg-[#1C302A] rounded-full blur-3xl opacity-50 pointer-events-none" />
+        <div className="bg-[#29483D] rounded-xl p-10 lg:p-16 flex flex-col lg:flex-row items-center justify-between gap-10 shadow-xl relative overflow-hidden my-10">
+          <div className="absolute -top-32 -right-32 w-80 h-80 bg-[#1C302A] rounded-full blur-3xl opacity-60 pointer-events-none" />
 
           <div className="max-w-xl relative z-10 text-center lg:text-left">
-            <h3 className="text-3xl lg:text-4xl font-light text-[#FFFFFF] tracking-tight mb-2">
+            <h3 className="text-3xl md:text-4xl font-light text-[#FFFFFF] tracking-tight mb-3">
               {aboutDict.google_title}
             </h3>
-            <p className="text-[#D9D9D2] text-sm font-light leading-relaxed">
+            <p className="text-[#D9D9D2] text-sm md:text-base font-light leading-relaxed">
               {aboutDict.google_text}
             </p>
           </div>
@@ -111,12 +130,12 @@ export default async function AboutPage({
               href={googleReviewLink}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-3 bg-[#FFFFFF] hover:bg-[#F2F1EC] text-[#29483D] font-bold text-xs tracking-widest uppercase px-8 py-4 rounded-xl transition-all duration-300 shadow-sm whitespace-nowrap w-full lg:w-auto justify-center"
+              className="inline-flex items-center gap-3 bg-[#FFFFFF] hover:bg-[#F2F1EC] text-[#29483D] font-bold text-[9px] md:text-[10px] tracking-[0.2em] uppercase px-8 py-4 md:py-5 rounded-md transition-all duration-300 shadow-sm whitespace-nowrap w-full lg:w-auto justify-center"
             >
               {aboutDict.google_button}
               <svg
-                width="14"
-                height="14"
+                width="15"
+                height="15"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"

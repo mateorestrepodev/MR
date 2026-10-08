@@ -105,30 +105,30 @@
       "message": "¡Hola! Me gustaría diseñar un tour privado a la medida en Medellín."
     },
     "about": {
-      "tag": "Nuestra Filosofía",
-      "title": "No somos una agencia. Somos tu concierge privado.",
-      "description": "Diseñamos experiencias a la medida para viajeros exigentes. Olvídate de los itinerarios rígidos y las multitudes; en MR, tú marcas el ritmo. Te conectamos con la verdadera esencia de Medellín a través de vehículos premium, guías expertos locales y un nivel de servicio impecable.",
-      "reviews_title": "Lo que dicen nuestros clientes",
-      "google_title": "Excelencia comprobada",
-      "google_text": "Calificados con 5 estrellas en Google Reviews",
-      "google_button": "Dejar una reseña en Google",
-      "reviews": [
-        {
-          "name": "Sarah Jenkins",
-          "text": "Una experiencia increíble en Guatapé. El servicio fue impecable desde la recogida en el hotel hasta el regreso. Nuestro guía conocía cada rincón.",
-          "date": "Hace 2 semanas"
-        },
-        {
-          "name": "Michael T.",
-          "text": "No suelo dejar reseñas, pero el nivel de detalle de MR Medellín es de otro nivel. La SUV estaba inmaculada y la finca cafetera fue muy exclusiva.",
-          "date": "Hace 1 mes"
-        },
-        {
-          "name": "David & Emma",
-          "text": "Contratamos el servicio de transfer desde el aeropuerto y terminamos agendando todos nuestros tours con ellos. Lujo, puntualidad y calidez.",
-          "date": "Hace 2 meses"
-        }
-      ]
+  "tag": "EL FUNDADOR",
+  "title": "Hola, soy Mateo Restrepo.",
+  "description": "Durante más de 5 años he tenido el privilegio de guiar y transportar a viajeros extranjeros por Medellín. MR Private Tours nació con un propósito claro: ofrecerte una experiencia donde tu seguridad y tranquilidad son nuestra prioridad absoluta. Conocemos la ciudad a la perfección, te protegemos en cada etapa del camino y garantizamos un entorno seguro para que solo te preocupes por disfrutar.\n\nNuestra filosofía es sencilla: 'Take Your Time!'. Mantenemos una logística impecable y un itinerario establecido para aprovechar el día, pero el ritmo lo marcas tú. Sin prisas, sin presiones de grupos grandes. Queremos que vivas la verdadera esencia de Colombia con la exclusividad de un servicio premium diseñado a tu medida.",
+  "reviews_title": "LO QUE DICEN NUESTROS CLIENTES",
+  "google_title": "Experiencias Reales",
+  "google_text": "Descubre por qué viajeros de todo el mundo confían en nosotros para su estadía en Medellín.",
+  "google_button": "Ver reseñas en Google Maps",
+  "reviews": [
+    {
+      "name": "Sarah M.",
+      "text": "¡Increíble experiencia! Mateo nos hizo sentir seguros y cuidados todo el tiempo. Nunca nos sentimos apurados. Verdaderamente 'Take Your Time!' como prometen.",
+      "date": "Hace 2 semanas"
+    },
+    {
+      "name": "James T.",
+      "text": "El mejor servicio VIP en Medellín. El tour a Guatapé superó todas nuestras expectativas y la comodidad del vehículo es de otro nivel.",
+      "date": "Hace 1 mes"
+    },
+    {
+      "name": "Elena R.",
+      "text": "Puntualidad, lujo y seguridad. Nos recogieron en el aeropuerto y desde el primer minuto el trato fue excepcional.",
+      "date": "Hace 2 meses"
     }
+  ]
+}
   }
 }

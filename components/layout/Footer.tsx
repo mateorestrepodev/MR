@@ -70,7 +70,7 @@ export default function Footer({ lang }: { lang: string }) {
                 </a>
 
                 <a
-                  href="https://instagram.com"
+                  href="https://instagram.com/mrtours.co"
                   target="_blank"
                   rel="noreferrer"
                   className="text-sm font-light text-[#D9D9D2]/85 transition-colors duration-300 hover:text-white"

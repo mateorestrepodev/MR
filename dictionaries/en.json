@@ -106,31 +106,31 @@
       "message": "Hello! I would like to design a custom private tour in Medellin."
     },
     "about": {
-      "tag": "Our Philosophy",
-      "title": "Not just an agency. We are your private concierge.",
-      "description": "We design tailor-made experiences for discerning travelers. Forget rigid itineraries and large crowds; at MR, you set the pace. We connect you with the true essence of Medellín through premium vehicles, expert local guides, and flawless service.",
-      "reviews_title": "What our clients say",
-      "google_title": "Proven Excellence",
-      "google_text": "Rated 5 stars on Google Reviews",
-      "google_button": "Leave a review on Google",
-      "reviews": [
-        {
-          "name": "Sarah Jenkins",
-          "text": "An incredible experience in Guatapé. The service was flawless from hotel pick-up to drop-off. Our guide knew every hidden spot.",
-          "date": "2 weeks ago"
-        },
-        {
-          "name": "Michael T.",
-          "text": "I don't usually leave reviews, but the level of detail from MR Medellín is next level. The SUV was immaculate and the coffee farm was very exclusive.",
-          "date": "1 month ago"
-        },
-        {
-          "name": "David & Emma",
-          "text": "We booked the airport transfer and ended up booking all our tours with them. Luxury, punctuality, and warmth.",
-          "date": "2 months ago"
-        }
-      ]
+  "tag": "THE FOUNDER",
+  "title": "Hello, I'm Mateo Restrepo.",
+  "description": "For over 5 years, I've had the privilege of guiding and transporting international travelers through Medellin. MR Private Tours was born with a clear purpose: to offer an experience where your safety and peace of mind are our absolute priority. We know the city perfectly, protect you every step of the way, and guarantee a secure environment so you can focus solely on enjoying your trip.\n\nOur philosophy is simple: 'Take Your Time!'. We maintain flawless logistics and a set schedule to make the most of the day, but you set the pace. Unhurried, with no large group pressures. We want you to experience the true essence of Colombia with the exclusivity of a tailored premium service.",
+  "reviews_title": "WHAT OUR CLIENTS SAY",
+  "google_title": "Real Experiences",
+  "google_text": "Discover why travelers from all over the world trust us for their stay in Medellin.",
+  "google_button": "Read reviews on Google Maps",
+  "reviews": [
+    {
+      "name": "Sarah M.",
+      "text": "Incredible experience! Mateo made us feel safe and cared for the entire time. We never felt rushed. Truly 'Take Your Time!' as promised.",
+      "date": "2 weeks ago"
+    },
+    {
+      "name": "James T.",
+      "text": "The best VIP service in Medellin. The Guatape tour exceeded all our expectations and the vehicle comfort is next level.",
+      "date": "1 month ago"
+    },
+    {
+      "name": "Elena R.",
+      "text": "Punctuality, luxury, and safety. They picked us up at the airport and the treatment was exceptional from the very first minute.",
+      "date": "2 months ago"
     }
+  ]
+}
   
   }
 }

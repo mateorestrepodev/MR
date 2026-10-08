@@ -7,27 +7,35 @@ import Link from "next/link";
 const TOURS_CONFIG = {
   guatape: {
     id: "guatape",
-    price: 280,
+    price: 200,
     image: "/tours/guatapeportada.webp",
     link: "/tours/guatape",
+    note_es: "Precio total por grupo",
+    note_en: "Total price per group",
   },
   cafe: {
     id: "cafe",
-    price: 150,
+    price: 160,
     image: "/tours/cafeportada.webp",
     link: "/tours/cafe",
+    note_es: "Por persona (Entrada incluida)",
+    note_en: "Per person (Entrance included)",
   },
   medellin: {
     id: "medellin",
-    price: 120,
+    price: 140,
     image: "/tours/medellinportada.webp",
     link: "/tours/medellin",
+    note_es: "Precio total por grupo",
+    note_en: "Total price per group",
   },
   aeropuerto: {
     id: "aeropuerto",
     price: 80,
     image: "/tours/aeropuertoportada.webp",
     link: "/tours/aeropuerto",
+    note_es: "Precio total por trayecto",
+    note_en: "Total price per ride",
   },
 };
 
@@ -72,10 +80,11 @@ export default function BookingHero({ dict, lang }: BookingHeroProps) {
 
     const phoneNumber = "573181686591";
 
-    const message = dict.hero.greeting
-      .replace("{name}", fullName)
-      .replace("{tour}", activeTourTitle)
-      .replace("{date}", selectedDate);
+    const isEs = lang === "es";
+
+    const message = isEs
+      ? `Hola MR Medellín. Mi nombre es *${fullName}*.\n\nEstoy interesado/a en reservar una experiencia privada:\n\n📍 *Tour:* ${activeTourTitle}\n🗓 *Fecha Preferida:* ${selectedDate}\n\nMe gustaría recibir información sobre disponibilidad y métodos de pago. ¡Gracias!`
+      : `Hello MR Medellin. My name is *${fullName}*.\n\nI am interested in booking a private experience:\n\n📍 *Tour:* ${activeTourTitle}\n🗓 *Preferred Date:* ${selectedDate}\n\nI would like to receive information regarding availability and payment methods. Thank you!`;
 
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
       message,
@@ -234,24 +243,31 @@ export default function BookingHero({ dict, lang }: BookingHeroProps) {
 
             {/* Precio + Botón */}
             <div className="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
-              {/* Precio */}
-              <div>
+              {/* === CAJA IZQUIERDA: AGRUPA PRECIO Y NOTA === */}
+              <div className="flex flex-col items-start justify-end">
                 <span className="mb-1 block text-[9px] font-semibold uppercase tracking-[0.2em] text-[#737772]">
                   {dict.hero.price_label}
                 </span>
 
                 <div className="flex items-baseline gap-2">
-                  <span className="text-2xl font-light tracking-tight text-[#202522] md:text-[28px]">
+                  <span className="text-2xl font-light tracking-tight text-[#202522] md:text-[28px] leading-none">
                     ${activeTourConfig.price}
                   </span>
-
                   <span className="text-[11px] font-medium uppercase tracking-wide text-[#737772]">
                     USD
                   </span>
                 </div>
-              </div>
 
-              {/* Botón */}
+                {/* Nota debajo del precio */}
+                <span className="text-[9.5px] font-light text-[#737772] tracking-wide mt-1.5 block">
+                  {lang === "es"
+                    ? activeTourConfig.note_es
+                    : activeTourConfig.note_en}
+                </span>
+              </div>
+              {/* === FIN CAJA IZQUIERDA === */}
+
+              {/* === CAJA DERECHA: BOTÓN === */}
               <button
                 type="submit"
                 className="group flex h-[48px] w-full sm:w-auto items-center justify-center gap-2 sm:gap-3 rounded-md bg-[#29483D] px-4 sm:px-7 text-[9px] sm:text-[10px] font-semibold uppercase tracking-[0.1em] sm:tracking-[0.18em] text-white shadow-sm transition-all duration-300 hover:bg-[#1C302A]"

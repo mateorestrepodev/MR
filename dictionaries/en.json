@@ -7,7 +7,7 @@
       "name_label": "Full Name",
       "name_placeholder": "John Doe",
       "date_label": "Preferred Date",
-      "price_label": "Estimated Price",
+      "price_label": "Price",
       "button": "Get quote on WhatsApp",
       "view_details": "View full details",
       "greeting": "Hello! I'm {name}. I am interested in booking the *{tour}* on *{date}*."
@@ -20,37 +20,33 @@
     },
     "tour_details": {
     "guatape": {
-      "image_count": 6,
+      "image_count": 9,
       "title": "Guatapé",
-      "description": "Experience the vibrant colors of Guatapé and climb the monolithic El Peñol rock for breathtaking panoramic views of the reservoir. A premium, private journey tailored to your pace.",
+      "description": "Begin your premium experience with a VIP pickup directly from your hotel. Embark on a seamless, scenic journey with exclusive stops at the Alto del Chocho viewpoint and the charming Réplica del Peñol. Conquer the monolithic El Peñol rock to marvel at breathtaking panoramic views of the reservoir, and conclude your day strolling through the vibrantly colored streets of Guatapé town. A fully private tour, tailored entirely to your pace and comfort.",
       "duration": "8 - 10 Hours",
       "includes": [
         "Private VIP Transportation (SUV)",
         "Bilingual Expert Guide",
-        "Entrance tickets to El Peñol",
-        "Private boat ride on the lake",
-        "Premium hydration and snacks"
+        "Hydration and snacks"
       ],
-      "price": 280,
+      "price": 200,
       "book_button": "Book via WhatsApp",
       "back_button": "Back to Home",
       "about_title": "About this experience",
       "includes_title": "What's included",
       "duration_label": "Duration",
-      "fee_note": "No hidden fees. Pay directly on the day of the tour."
+      "fee_note": "No hidden fees."
     },
     "medellin": {
-          "image_count": 5,
+          "image_count": 7,
           "title": "Medellín",
-          "description": "Discover the incredible transformation of Medellín. Visit key city landmarks and immerse yourself in the vibrant street art and history of the Comuna 13 escalators.",
-          "duration": "4 - 5 Hours",
+          "description": "Explore the true essence of Medellin with a private, tailor-made city tour. We will dive into the incredible transformation of the vibrant Comuna 13 and its famous street art. You will experience the local culture by riding the iconic Metro and Metrocable, offering unparalleled panoramic views of the valley. Step back in time at the traditional Pueblito Paisa, and to top it all off at your own pace, we will end the day at the spectacular Mirador El Cielo to take in the breathtaking city skyline. A VIP experience, totally exclusive and unhurried.",
+          "duration": "7 - 9 Hours",
           "includes": [
             "Private VIP Transportation",
             "Bilingual Expert Guide",
-            "Comuna 13 Graffiti Tour",
-            "Local snacks tasting"
-          ],
-          "price": 120,
+            "Comuna 13 Graffiti Tour"          ],
+          "price": 140,
           "book_button": "Request via WhatsApp",
           "back_button": "Back to Home",
           "about_title": "About this experience",
@@ -59,10 +55,10 @@
           "fee_note": "No hidden fees. Pay directly on tour day."
         },
         "cafe": {
-          "image_count": 4,
+          "image_count": 3,
           "title": "Coffee Farm Experience",
-          "description": "Head into the mountains of Antioquia and discover the artisanal process of Colombian coffee, from seed to cup, at an authentic traditional coffee farm.",
-          "duration": "4 - 5 Hours",
+          "description": "Immerse yourself in authentic Colombian coffee culture with a VIP experience just minutes away from the city. During this immersive 5-hour journey, we will pick you up from your hotel and take you to a traditional farm where you will discover the entire specialty coffee process, from seed to the perfect cup. Enjoy a guided tasting by local experts in a breathtaking natural setting. A fully private tour, designed to awaken your senses at your own pace.",
+          "duration": "5 - 6  Hours",
           "includes": [
             "Private VIP Transportation",
             "Bilingual Expert Guide",
@@ -88,7 +84,7 @@
             "Luggage assistance",
             "Bottled water on board"
           ],
-          "price": 80,
+          "price": 70,
           "book_button": "Request via WhatsApp",
           "back_button": "Back to Home",
           "about_title": "About this service",

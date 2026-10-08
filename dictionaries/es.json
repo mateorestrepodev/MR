@@ -7,7 +7,7 @@
       "name_label": "Nombre Completo",
       "name_placeholder": "Juan Pérez",
       "date_label": "Fecha Preferida",
-      "price_label": "Precio Estimado",
+      "price_label": "Precio ",
       "button": "Cotizar por WhatsApp",
       "view_details": "Ver detalles completos",
       "greeting": "¡Hola! Soy {name}. Estoy interesado en reservar el *{tour}* para el *{date}*."
@@ -20,37 +20,33 @@
     },
     "tour_details": {
     "guatape": {
-      "image_count": 6,
+      "image_count": 9,
       "title": "Guatapé",
-      "description": "Experimenta los colores vibrantes de Guatapé y sube a la imponente Piedra del Peñol para disfrutar de vistas panorámicas. Un viaje privado y premium adaptado a tu ritmo.",
+      "description": "Comienza tu experiencia premium con recogida VIP directamente en tu hotel. Emprenderemos un viaje escénico y sin prisas, con paradas exclusivas en el mirador del Alto del Chocho y la encantadora Réplica del Viejo Peñol. Conquista la imponente Piedra del Peñol para maravillarte con las mejores vistas panorámicas del embalse, y finaliza tu día paseando por las vibrantes y coloridas calles del pueblo de Guatapé. Un recorrido privado, diseñado a tu propio ritmo y con total confort.",
       "duration": "8 - 10 Horas",
       "includes": [
         "Transporte Privado VIP (SUV)",
         "Guía Experto Bilingüe",
-        "Entradas a la Piedra del Peñol",
-        "Paseo en bote privado",
         "Hidratación y snacks premium"
       ],
-      "price": 280,
+      "price": 200,
       "book_button": "Reservar por WhatsApp",
       "back_button": "Volver al Inicio",
       "about_title": "Acerca de esta experiencia",
       "includes_title": "Qué incluye",
       "duration_label": "Duración",
-      "fee_note": "Sin tarifas ocultas. Paga directamente el día del tour."
+      "fee_note": "Sin tarifas ocultas."
     },
     "medellin": {
-          "image_count": 5,
+          "image_count": 7,
           "title": "Medellín",
-          "description": "Descubre la increíble transformación de Medellín. Recorre los puntos clave de la ciudad y sumérgete en el vibrante arte urbano y la historia de las escaleras eléctricas de la Comuna 13.",
-          "duration": "4 - 5 Horas",
+          "description": "Descubre la verdadera esencia de Medellín con un recorrido privado y diseñado a tu medida. Nos sumergiremos en la asombrosa transformación de la vibrante Comuna 13 y su famoso arte urbano. Vivirás la cultura local viajando en el icónico Metro y Metrocable, disfrutando de vistas panorámicas inigualables del valle. Viajaremos en el tiempo en el tradicional Pueblito Paisa y, para cerrar con broche de oro y a tu propio ritmo, coronaremos el día admirando la ciudad desde las alturas en el espectacular Mirador El Cielo. Una experiencia VIP, totalmente exclusiva y sin prisas.",
+          "duration": "7 - 9 Horas",
           "includes": [
             "Transporte Privado VIP",
             "Guía Experto Bilingüe",
-            "Tour de Graffiti en Comuna 13",
-            "Degustación de snacks locales"
-          ],
-          "price": 120,
+            "Tour de Graffiti en Comuna 13"          ],
+          "price": 140,
           "book_button": "Solicitar por WhatsApp",
           "back_button": "Volver al Inicio",
           "about_title": "Acerca de esta experiencia",
@@ -59,10 +55,10 @@
           "fee_note": "Sin tarifas ocultas. Pago directo el día del tour."
         },
         "cafe": {
-          "image_count": 4,
+          "image_count": 3,
           "title": "Experiencia Finca Cafetera",
-          "description": "Adéntrate en las montañas de Antioquia y descubre el proceso artesanal del café colombiano, desde la siembra hasta la taza, en una auténtica finca tradicional.",
-          "duration": "4 - 5 Horas",
+          "description": "Sumérgete en la auténtica cultura cafetera de Colombia con una experiencia VIP a solo minutos de la ciudad. Durante este viaje inmersivo de 5 horas, te recogeremos en tu hotel para llevarte a una finca tradicional donde descubrirás el proceso completo del café de especialidad, desde la siembra hasta la taza perfecta. Disfruta de una cata guiada por expertos locales en un entorno natural privilegiado. Un recorrido privado, diseñado para despertar tus sentidos a tu propio ritmo.",
+          "duration": "5 - 6 Horas",
           "includes": [
             "Transporte Privado VIP",
             "Guía Experto Bilingüe",
@@ -83,12 +79,12 @@
           "description": "Comienza o termina tu viaje con el máximo confort. Servicio de traslado privado en vehículos premium desde o hacia el Aeropuerto Internacional José María Córdova.",
           "duration": "45 - 60 Minutos",
           "includes": [
-            "Transporte Privado VIP (SUV)",
+            "Transporte Privado VIP",
             "Conductor profesional bilingüe",
             "Asistencia con equipaje",
             "Botellas de agua a bordo"
           ],
-          "price": 80,
+          "price": 70,
           "book_button": "Solicitar por WhatsApp",
           "back_button": "Volver al Inicio",
           "about_title": "Acerca del servicio",

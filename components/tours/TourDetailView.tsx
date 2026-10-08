@@ -237,7 +237,7 @@ export default function TourDetailView({
 
                 <div className="flex flex-col">
                   <span className="block text-[10px] font-bold uppercase tracking-widest text-[#737772] mb-1">
-                    {lang === "es" ? "Precio Estimado" : "Estimated Price"}
+                    {lang === "es" ? "Precio" : "Price"}
                   </span>
                   <div className="flex items-baseline">
                     <span className="text-4xl lg:text-5xl font-light text-[#202522] tracking-tight">

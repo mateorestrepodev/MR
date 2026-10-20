@@ -18,7 +18,7 @@ export default async function AboutPage({
   const dict = await getDictionary(resolvedParams.lang);
   const aboutDict = dict.home.about;
 
-  const googleReviewLink = "https://g.page/r/TU_CODIGO/review"; // Reemplaza con tu link
+  const googleReviewLink = "https://g.page/r/CXtL-ocmtBGUEBM/review";
 
   return (
     <main className="min-h-screen bg-[#F2F1EC] py-6 px-4 md:px-8">

@@ -1,5 +1,12 @@
 {
   "home": {
+    "modal": {
+  "title": "¿Quieres crear tu propio itinerario?",
+  "description": "Diseñamos viajes exclusivos en Medellín basados en tus tiempos e intereses. Déjanos tu nombre y hablemos por WhatsApp para planear tu ruta ideal.",
+  "input_placeholder": "Tu nombre",
+  "button": "Planear mi itinerario por WhatsApp",
+  "close": "Cerrar"
+},
     "hero": {
       "title": "Planea tu experiencia",
       "subtitle": "Selecciona tu tour privado y obtén una cotización inmediata por WhatsApp.",

@@ -1,5 +1,12 @@
 {
   "home": {
+    "modal": {
+    "title": "Want to create your own itinerary?",
+    "description": "We design exclusive trips in Medellin based on your pace and interests. Leave your name and let's chat on WhatsApp to plan your ideal route.",
+    "input_placeholder": "Your name",
+    "button": "Plan my itinerary on WhatsApp",
+    "close": "Close"
+  },
     "hero": {
       "title": "Plan your experience",
       "subtitle": "Select your private tour and get an instant quote via WhatsApp.",

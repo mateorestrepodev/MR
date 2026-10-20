@@ -94,7 +94,7 @@ export default function ToursGrid({
                       {tourTitle}
                     </h3>
                     <span className="text-[10px] tracking-widest font-bold text-[#FFFFFF] uppercase border-b border-[#FFFFFF]/40 pb-1">
-                      {dict.explore_button || "Explore"}
+                      {dict.explore_button || "Tours"}
                     </span>
                   </div>
                 </div>

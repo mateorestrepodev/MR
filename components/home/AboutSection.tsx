@@ -14,7 +14,7 @@ interface AboutProps {
 
 export default function AboutSection({ dict }: AboutProps) {
   // Reemplaza esto con el link real de tu Google My Business
-  const googleReviewLink = "https://g.page/r/TU_CODIGO/review";
+  const googleReviewLink = "https://g.page/r/CXtL-ocmtBGUEBM/review";
 
   return (
     <section className="w-full bg-[#FFFFFF] py-24 lg:py-32 px-4 md:px-8 border-y border-[#D9D9D2]/30">

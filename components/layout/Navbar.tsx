@@ -66,7 +66,7 @@ export default function Navbar({ lang }: { lang: string }) {
             onClick={handleExploreClick}
             className="px-4 py-2 text-[9px] tracking-widest font-bold text-[#FFFFFF] bg-[#29483D] rounded-md hover:bg-[#1C302A] transition-colors duration-300"
           >
-            {lang === "es" ? "EXPLORAR →" : "EXPLORE →"}
+            {lang === "es" ? "TOURS →" : "TOURS →"}
           </Link>
         </div>
       </div>

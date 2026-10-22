@@ -1,12 +1,12 @@
 {
   "home": {
     "modal": {
-    "title": "Want to create your own itinerary?",
-    "description": "We design exclusive trips in Medellin based on your pace and interests. Leave your name and let's chat on WhatsApp to plan your ideal route.",
-    "input_placeholder": "Your name",
-    "button": "Plan my itinerary on WhatsApp",
-    "close": "Close"
-  },
+      "title": "Want to create your own itinerary?",
+      "description": "We design exclusive trips in Medellin based on your pace and interests. Leave your name and let's chat on WhatsApp to plan your ideal route.",
+      "input_placeholder": "Your name",
+      "button": "Plan my itinerary on WhatsApp",
+      "close": "Close"
+    },
     "hero": {
       "title": "Plan your experience",
       "subtitle": "Select your private tour and get an instant quote via WhatsApp.",
@@ -26,81 +26,81 @@
       "aeropuerto": "JMC Airport VIP Transfer"
     },
     "tour_details": {
-    "guatape": {
-      "image_count": 9,
-      "title": "Guatapé",
-      "description": "Begin your premium experience with a VIP pickup directly from your hotel. Embark on a seamless, scenic journey with exclusive stops at the Alto del Chocho viewpoint and the charming Réplica del Peñol. Conquer the monolithic El Peñol rock to marvel at breathtaking panoramic views of the reservoir, and conclude your day strolling through the vibrantly colored streets of Guatapé town. A fully private tour, tailored entirely to your pace and comfort.",
-      "duration": "8 - 10 Hours",
-      "includes": [
-        "Private VIP Transportation (SUV)",
-        "Bilingual Expert Guide",
-        "Hydration and snacks"
-      ],
-      "price": 200,
-      "book_button": "Book via WhatsApp",
-      "back_button": "Back to Home",
-      "about_title": "About this experience",
-      "includes_title": "What's included",
-      "duration_label": "Duration",
-      "fee_note": "No hidden fees."
+      "guatape": {
+        "image_count": 9,
+        "title": "Guatapé",
+        "description": "Begin your premium experience with a VIP pickup directly from your hotel. Embark on a seamless, scenic journey with exclusive stops at the Alto del Chocho viewpoint and the charming Réplica del Peñol. Conquer the monolithic El Peñol rock to marvel at breathtaking panoramic views of the reservoir, and conclude your day strolling through the vibrantly colored streets of Guatapé town. A fully private tour, tailored entirely to your pace and comfort.",
+        "duration": "8 - 10 Hours",
+        "includes": [
+          "Private VIP Transportation (SUV)",
+          "Bilingual Expert Guide",
+          "Hydration and snacks"
+        ],
+        "price": 200,
+        "book_button": "Book via WhatsApp",
+        "back_button": "Back to Home",
+        "about_title": "About this experience",
+        "includes_title": "What's included",
+        "duration_label": "Duration",
+        "fee_note": "No hidden fees."
+      },
+      "medellin": {
+        "image_count": 7,
+        "title": "Medellín",
+        "description": "Explore the true essence of Medellin with a private, tailor-made city tour. We will dive into the incredible transformation of the vibrant Comuna 13 and its famous street art. You will experience the local culture by riding the iconic Metro and Metrocable, offering unparalleled panoramic views of the valley. Step back in time at the traditional Pueblito Paisa, and to top it all off at your own pace, we will end the day at the spectacular Mirador El Cielo to take in the breathtaking city skyline. A VIP experience, totally exclusive and unhurried.",
+        "duration": "7 - 9 Hours",
+        "includes": [
+          "Private VIP Transportation",
+          "Bilingual Expert Guide",
+          "Comuna 13 Graffiti Tour"
+        ],
+        "price": 140,
+        "book_button": "Request via WhatsApp",
+        "back_button": "Back to Home",
+        "about_title": "About this experience",
+        "includes_title": "What's included",
+        "duration_label": "Duration",
+        "fee_note": "No hidden fees. Pay directly on tour day."
+      },
+      "cafe": {
+        "image_count": 3,
+        "title": "Coffee Farm Experience",
+        "description": "Immerse yourself in authentic Colombian coffee culture with a VIP experience just minutes away from the city. During this immersive 5-hour journey, we will pick you up from your hotel and take you to a traditional farm where you will discover the entire specialty coffee process, from seed to the perfect cup. Enjoy a guided tasting by local experts in a breathtaking natural setting. A fully private tour, designed to awaken your senses at your own pace.",
+        "duration": "5 - 6 Hours",
+        "includes": [
+          "Private VIP Transportation",
+          "Bilingual Expert Guide",
+          "Full coffee process tour",
+          "Specialty coffee tasting"
+        ],
+        "price": 150,
+        "book_button": "Request via WhatsApp",
+        "back_button": "Back to Home",
+        "about_title": "About this experience",
+        "includes_title": "What's included",
+        "duration_label": "Duration",
+        "fee_note": "No hidden fees. Pay directly on tour day."
+      },
+      "aeropuerto": {
+        "image_count": 3,
+        "title": "VIP Airport Transfer (MDE)",
+        "description": "Start or end your journey with maximum comfort. Private transfer service in premium vehicles to or from the José María Córdova International Airport.",
+        "duration": "45 - 60 Minutes",
+        "includes": [
+          "Private VIP Transportation (SUV)",
+          "Professional bilingual driver",
+          "Luggage assistance",
+          "Bottled water on board"
+        ],
+        "price": 70,
+        "book_button": "Request via WhatsApp",
+        "back_button": "Back to Home",
+        "about_title": "About this service",
+        "includes_title": "What's included",
+        "duration_label": "Duration",
+        "fee_note": "Price per vehicle, not per person."
+      }
     },
-    "medellin": {
-          "image_count": 7,
-          "title": "Medellín",
-          "description": "Explore the true essence of Medellin with a private, tailor-made city tour. We will dive into the incredible transformation of the vibrant Comuna 13 and its famous street art. You will experience the local culture by riding the iconic Metro and Metrocable, offering unparalleled panoramic views of the valley. Step back in time at the traditional Pueblito Paisa, and to top it all off at your own pace, we will end the day at the spectacular Mirador El Cielo to take in the breathtaking city skyline. A VIP experience, totally exclusive and unhurried.",
-          "duration": "7 - 9 Hours",
-          "includes": [
-            "Private VIP Transportation",
-            "Bilingual Expert Guide",
-            "Comuna 13 Graffiti Tour"          ],
-          "price": 140,
-          "book_button": "Request via WhatsApp",
-          "back_button": "Back to Home",
-          "about_title": "About this experience",
-          "includes_title": "What's included",
-          "duration_label": "Duration",
-          "fee_note": "No hidden fees. Pay directly on tour day."
-        },
-        "cafe": {
-          "image_count": 3,
-          "title": "Coffee Farm Experience",
-          "description": "Immerse yourself in authentic Colombian coffee culture with a VIP experience just minutes away from the city. During this immersive 5-hour journey, we will pick you up from your hotel and take you to a traditional farm where you will discover the entire specialty coffee process, from seed to the perfect cup. Enjoy a guided tasting by local experts in a breathtaking natural setting. A fully private tour, designed to awaken your senses at your own pace.",
-          "duration": "5 - 6  Hours",
-          "includes": [
-            "Private VIP Transportation",
-            "Bilingual Expert Guide",
-            "Full coffee process tour",
-            "Specialty coffee tasting"
-          ],
-          "price": 150,
-          "book_button": "Request via WhatsApp",
-          "back_button": "Back to Home",
-          "about_title": "About this experience",
-          "includes_title": "What's included",
-          "duration_label": "Duration",
-          "fee_note": "No hidden fees. Pay directly on tour day."
-        },
-        "aeropuerto": {
-          "image_count": 3,
-          "title": "VIP Airport Transfer (MDE)",
-          "description": "Start or end your journey with maximum comfort. Private transfer service in premium vehicles to or from the José María Córdova International Airport.",
-          "duration": "45 - 60 Minutes",
-          "includes": [
-            "Private VIP Transportation (SUV)",
-            "Professional bilingual driver",
-            "Luggage assistance",
-            "Bottled water on board"
-          ],
-          "price": 70,
-          "book_button": "Request via WhatsApp",
-          "back_button": "Back to Home",
-          "about_title": "About this service",
-          "includes_title": "What's included",
-          "duration_label": "Duration",
-          "fee_note": "Price per vehicle, not per person."
-        }
-  },
-  
     "collection": {
       "title": "Signature Experiences",
       "subtitle": "Discover our handpicked private tours around Medellín and Antioquia. Designed around your pace.",
@@ -109,35 +109,35 @@
     "custom_tour": {
       "title": "Bespoke Itineraries",
       "subtitle": "Looking for something unique? Design a tailor-made experience in Medellín with our private concierge.",
-      "button": "Contact ",
+      "button": "Contact",
       "message": "Hello! I would like to design a custom private tour in Medellin."
     },
     "about": {
-  "tag": "THE FOUNDER",
-  "title": "Hello, I'm Mateo Restrepo.",
-  "description": "For over 5 years, I've had the privilege of guiding and transporting international travelers through Medellin. MR Private Tours was born with a clear purpose: to offer an experience where your safety and peace of mind are our absolute priority. We know the city perfectly, protect you every step of the way, and guarantee a secure environment so you can focus solely on enjoying your trip.\n\nOur philosophy is simple: 'Take Your Time!'. We maintain flawless logistics and a set schedule to make the most of the day, but you set the pace. Unhurried, with no large group pressures. We want you to experience the true essence of Colombia with the exclusivity of a tailored premium service.",
-  "reviews_title": "WHAT OUR CLIENTS SAY",
-  "google_title": "Real Experiences",
-  "google_text": "Discover why travelers from all over the world trust us for their stay in Medellin.",
-  "google_button": "Read reviews on Google Maps",
-  "reviews": [
-    {
-      "name": "Sarah M.",
-      "text": "Incredible experience! Mateo made us feel safe and cared for the entire time. We never felt rushed. Truly 'Take Your Time!' as promised.",
-      "date": "2 weeks ago"
-    },
-    {
-      "name": "James T.",
-      "text": "The best VIP service in Medellin. The Guatape tour exceeded all our expectations and the vehicle comfort is next level.",
-      "date": "1 month ago"
-    },
-    {
-      "name": "Elena R.",
-      "text": "Punctuality, luxury, and safety. They picked us up at the airport and the treatment was exceptional from the very first minute.",
-      "date": "2 months ago"
+      "tag": "THE FOUNDER",
+      "title": "Hello, I'm Mateo Restrepo.",
+      "paragraph_1": "For over 5 years, I've had the privilege of guiding and transporting international travelers through Medellin. MR Private Tours was born with a clear purpose: to offer an experience where your safety and peace of mind are our absolute priority. We know the city perfectly, protect you every step of the way, and guarantee a secure environment so you can focus solely on enjoying your trip.",
+      "paragraph_2": "Our philosophy is simple: 'Take Your Time!'. We maintain flawless logistics and a set schedule to make the most of the day, but you set the pace. Unhurried, with no large group pressures. We want you to experience the true essence of Colombia with the exclusivity of a tailored premium service.",
+      "reviews_title": "WHAT OUR CLIENTS SAY",
+      "google_title": "Real Experiences",
+      "google_text": "Discover why travelers from all over the world trust us for their stay in Medellin.",
+      "google_button": "Read reviews on Google Maps",
+      "reviews": [
+        {
+          "initial": "S",
+          "name": "Sofia Hidalgo",
+          "text": "Excellent service! A wonderful experience with top-notch attention. Totally recommended for those looking for a unique and reliable experience! Our bodyguard, porter, and photographer all in one 😂🫶🏻 Thank you Mateo!"
+        },
+        {
+          "initial": "W",
+          "name": "Wanda Mojica",
+          "text": "A wonderful experience! Mateo was kind, attentive, and made us feel comfortable and safe at all times. 100% recommended. Just tell him where you want to go and he will take you there 🚘"
+        },
+        {
+          "initial": "J",
+          "name": "Jose Curras",
+          "text": "He is the best tour guide I've had in many years, and I have traveled to many countries. 100% recommended: responsible, safe, and very reliable 🫡"
+        }
+      ]
     }
-  ]
-}
-  
   }
 }

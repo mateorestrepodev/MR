@@ -9,11 +9,17 @@ interface AboutProps {
     google_title: string;
     google_text: string;
     google_button: string;
+    // Agregamos la regla para que acepte tus reseñas
+    reviews: Array<{
+      initial: string;
+      name: string;
+      text: string;
+    }>;
   };
 }
 
 export default function AboutSection({ dict }: AboutProps) {
-  // Reemplaza esto con el link real de tu Google My Business
+  // Link real de tu Google My Business
   const googleReviewLink = "https://g.page/r/CXtL-ocmtBGUEBM/review";
 
   return (
@@ -53,47 +59,54 @@ export default function AboutSection({ dict }: AboutProps) {
               </p>
             </div>
 
-            {/* Simulación de Reseña en Vivo */}
-            <div className="bg-white w-full p-5 rounded-lg border border-[#D9D9D2]/50 shadow-sm flex flex-col gap-3">
-              <div className="flex items-center gap-3">
-                <div className="w-8 h-8 rounded-full bg-[#29483D] flex items-center justify-center text-white text-xs font-bold">
-                  S
-                </div>
-                <div className="flex flex-col">
-                  <span className="text-[#202522] text-xs font-semibold">
-                    Sarah M.
-                  </span>
-                  <div className="flex gap-0.5 text-[#FABB05]">
-                    {[...Array(5)].map((_, i) => (
-                      <svg
-                        key={i}
-                        width="12"
-                        height="12"
-                        viewBox="0 0 24 24"
-                        fill="currentColor"
-                      >
-                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                      </svg>
-                    ))}
+            {/* Mapeo dinámico de tus Reseñas Reales */}
+            <div className="w-full flex flex-col gap-4">
+              {dict.reviews &&
+                dict.reviews.map((review, index) => (
+                  <div
+                    key={index}
+                    className="bg-white w-full p-5 rounded-lg border border-[#D9D9D2]/50 shadow-sm flex flex-col gap-3"
+                  >
+                    <div className="flex items-center gap-3">
+                      <div className="w-8 h-8 rounded-full bg-[#29483D] flex items-center justify-center text-white text-xs font-bold">
+                        {review.initial}
+                      </div>
+                      <div className="flex flex-col">
+                        <span className="text-[#202522] text-xs font-semibold">
+                          {review.name}
+                        </span>
+                        <div className="flex gap-0.5 text-[#FABB05]">
+                          {/* Generamos las 5 estrellas automáticamente */}
+                          {[...Array(5)].map((_, i) => (
+                            <svg
+                              key={i}
+                              width="12"
+                              height="12"
+                              viewBox="0 0 24 24"
+                              fill="currentColor"
+                            >
+                              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                            </svg>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                    <p className="text-[#737772] text-[11px] font-light italic leading-relaxed">
+                      {review.text}
+                    </p>
+                    <div className="flex items-center gap-1 mt-1">
+                      <Image
+                        src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
+                        alt="Google"
+                        width={12}
+                        height={12}
+                      />
+                      <span className="text-[#737772] text-[9px] font-medium">
+                        Google Review
+                      </span>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <p className="text-[#737772] text-[11px] font-light italic leading-relaxed">
-                Incredible experience! Mateo made us feel safe and cared for the
-                entire time. We never felt rushed. Truly Take Your Time! as
-                promised.
-              </p>
-              <div className="flex items-center gap-1 mt-1">
-                <Image
-                  src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
-                  alt="Google"
-                  width={12}
-                  height={12}
-                />
-                <span className="text-[#737772] text-[9px] font-medium">
-                  Google Review
-                </span>
-              </div>
+                ))}
             </div>
 
             <a

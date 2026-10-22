@@ -1,12 +1,12 @@
 {
   "home": {
     "modal": {
-  "title": "¿Quieres crear tu propio itinerario?",
-  "description": "Diseñamos viajes exclusivos en Medellín basados en tus tiempos e intereses. Déjanos tu nombre y hablemos por WhatsApp para planear tu ruta ideal.",
-  "input_placeholder": "Tu nombre",
-  "button": "Planear mi itinerario por WhatsApp",
-  "close": "Cerrar"
-},
+      "title": "¿Quieres crear tu propio itinerario?",
+      "description": "Diseñamos viajes exclusivos en Medellín basados en tus tiempos e intereses. Déjanos tu nombre y hablemos por WhatsApp para planear tu ruta ideal.",
+      "input_placeholder": "Tu nombre",
+      "button": "Planear mi itinerario por WhatsApp",
+      "close": "Cerrar"
+    },
     "hero": {
       "title": "Planea tu experiencia",
       "subtitle": "Selecciona tu tour privado y obtén una cotización inmediata por WhatsApp.",
@@ -14,7 +14,7 @@
       "name_label": "Nombre Completo",
       "name_placeholder": "Juan Pérez",
       "date_label": "Fecha Preferida",
-      "price_label": "Precio ",
+      "price_label": "Precio",
       "button": "Cotizar por WhatsApp",
       "view_details": "Ver detalles completos",
       "greeting": "¡Hola! Soy {name}. Estoy interesado en reservar el *{tour}* para el *{date}*."
@@ -26,81 +26,82 @@
       "aeropuerto": "Traslado VIP Aeropuerto JMC"
     },
     "tour_details": {
-    "guatape": {
-      "image_count": 9,
-      "title": "Guatapé",
-      "description": "Comienza tu experiencia premium con recogida VIP directamente en tu hotel. Emprenderemos un viaje escénico y sin prisas, con paradas exclusivas en el mirador del Alto del Chocho y la encantadora Réplica del Viejo Peñol. Conquista la imponente Piedra del Peñol para maravillarte con las mejores vistas panorámicas del embalse, y finaliza tu día paseando por las vibrantes y coloridas calles del pueblo de Guatapé. Un recorrido privado, diseñado a tu propio ritmo y con total confort.",
-      "duration": "8 - 10 Horas",
-      "includes": [
-        "Transporte Privado VIP (SUV)",
-        "Guía Experto Bilingüe",
-        "Hidratación y snacks premium"
-      ],
-      "price": 200,
-      "book_button": "Reservar por WhatsApp",
-      "back_button": "Volver al Inicio",
-      "about_title": "Acerca de esta experiencia",
-      "includes_title": "Qué incluye",
-      "duration_label": "Duración",
-      "fee_note": "Sin tarifas ocultas."
+      "guatape": {
+        "image_count": 9,
+        "title": "Guatapé",
+        "description": "Comienza tu experiencia premium con recogida VIP directamente en tu hotel. Emprenderemos un viaje escénico y sin prisas, con paradas exclusivas en el mirador del Alto del Chocho y la encantadora Réplica del Viejo Peñol. Conquista la imponente Piedra del Peñol para maravillarte con las mejores vistas panorámicas del embalse, y finaliza tu día paseando por las vibrantes y coloridas calles del pueblo de Guatapé. Un recorrido privado, diseñado a tu propio ritmo y con total confort.",
+        "duration": "8 - 10 Horas",
+        "includes": [
+          "Transporte Privado VIP (SUV)",
+          "Guía Experto Bilingüe",
+          "Hidratación y snacks premium"
+        ],
+        "price": 200,
+        "book_button": "Reservar por WhatsApp",
+        "back_button": "Volver al Inicio",
+        "about_title": "Acerca de esta experiencia",
+        "includes_title": "Qué incluye",
+        "duration_label": "Duración",
+        "fee_note": "Sin tarifas ocultas."
+      },
+      "medellin": {
+        "image_count": 7,
+        "title": "Medellín",
+        "description": "Descubre la verdadera esencia de Medellín con un recorrido privado y diseñado a tu medida. Nos sumergiremos en la asombrosa transformación de la vibrante Comuna 13 y su famoso arte urbano. Vivirás la cultura local viajando en el icónico Metro y Metrocable, disfrutando de vistas panorámicas inigualables del valle. Viajaremos en el tiempo en el tradicional Pueblito Paisa y, para cerrar con broche de oro y a tu propio ritmo, coronaremos el día admirando la ciudad desde las alturas en el espectacular Mirador El Cielo. Una experiencia VIP, totalmente exclusiva y sin prisas.",
+        "duration": "7 - 9 Horas",
+        "includes": [
+          "Transporte Privado VIP",
+          "Guía Experto Bilingüe",
+          "Tour de Graffiti en Comuna 13"
+        ],
+        "price": 140,
+        "book_button": "Solicitar por WhatsApp",
+        "back_button": "Volver al Inicio",
+        "about_title": "Acerca de esta experiencia",
+        "includes_title": "Qué incluye",
+        "duration_label": "Duración",
+        "fee_note": "Sin tarifas ocultas. Pago directo el día del tour."
+      },
+      "cafe": {
+        "image_count": 3,
+        "title": "Experiencia Finca Cafetera",
+        "description": "Sumérgete en la auténtica cultura cafetera de Colombia con una experiencia VIP a solo minutos de la ciudad. Durante este viaje inmersivo de 5 horas, te recogeremos en tu hotel para llevarte a una finca tradicional donde descubrirás el proceso completo del café de especialidad, desde la siembra hasta la taza perfecta. Disfruta de una cata guiada por expertos locales en un entorno natural privilegiado. Un recorrido privado, diseñado para despertar tus sentidos a tu propio ritmo.",
+        "duration": "5 - 6 Horas",
+        "includes": [
+          "Transporte Privado VIP",
+          "Guía Experto Bilingüe",
+          "Tour completo del proceso del café",
+          "Cata de cafés especiales"
+        ],
+        "price": 150,
+        "book_button": "Solicitar por WhatsApp",
+        "back_button": "Volver al Inicio",
+        "about_title": "Acerca de esta experiencia",
+        "includes_title": "Qué incluye",
+        "duration_label": "Duración",
+        "fee_note": "Sin tarifas ocultas. Pago directo el día del tour."
+      },
+      "aeropuerto": {
+        "image_count": 3,
+        "title": "VIP Airport Transfer (MDE)",
+        "description": "Comienza o termina tu viaje con el máximo confort. Servicio de traslado privado en vehículos premium desde o hacia el Aeropuerto Internacional José María Córdova.",
+        "duration": "45 - 60 Minutos",
+        "includes": [
+          "Transporte Privado VIP",
+          "Conductor profesional bilingüe",
+          "Asistencia con equipaje",
+          "Botellas de agua a bordo"
+        ],
+        "price": 70,
+        "book_button": "Solicitar por WhatsApp",
+        "back_button": "Volver al Inicio",
+        "about_title": "Acerca del servicio",
+        "includes_title": "Qué incluye",
+        "duration_label": "Duración",
+        "fee_note": "Precio por vehículo, no por persona."
+      }
     },
-    "medellin": {
-          "image_count": 7,
-          "title": "Medellín",
-          "description": "Descubre la verdadera esencia de Medellín con un recorrido privado y diseñado a tu medida. Nos sumergiremos en la asombrosa transformación de la vibrante Comuna 13 y su famoso arte urbano. Vivirás la cultura local viajando en el icónico Metro y Metrocable, disfrutando de vistas panorámicas inigualables del valle. Viajaremos en el tiempo en el tradicional Pueblito Paisa y, para cerrar con broche de oro y a tu propio ritmo, coronaremos el día admirando la ciudad desde las alturas en el espectacular Mirador El Cielo. Una experiencia VIP, totalmente exclusiva y sin prisas.",
-          "duration": "7 - 9 Horas",
-          "includes": [
-            "Transporte Privado VIP",
-            "Guía Experto Bilingüe",
-            "Tour de Graffiti en Comuna 13"          ],
-          "price": 140,
-          "book_button": "Solicitar por WhatsApp",
-          "back_button": "Volver al Inicio",
-          "about_title": "Acerca de esta experiencia",
-          "includes_title": "Qué incluye",
-          "duration_label": "Duración",
-          "fee_note": "Sin tarifas ocultas. Pago directo el día del tour."
-        },
-        "cafe": {
-          "image_count": 3,
-          "title": "Experiencia Finca Cafetera",
-          "description": "Sumérgete en la auténtica cultura cafetera de Colombia con una experiencia VIP a solo minutos de la ciudad. Durante este viaje inmersivo de 5 horas, te recogeremos en tu hotel para llevarte a una finca tradicional donde descubrirás el proceso completo del café de especialidad, desde la siembra hasta la taza perfecta. Disfruta de una cata guiada por expertos locales en un entorno natural privilegiado. Un recorrido privado, diseñado para despertar tus sentidos a tu propio ritmo.",
-          "duration": "5 - 6 Horas",
-          "includes": [
-            "Transporte Privado VIP",
-            "Guía Experto Bilingüe",
-            "Tour completo del proceso del café",
-            "Cata de cafés especiales"
-          ],
-          "price": 150,
-          "book_button": "Solicitar por WhatsApp",
-          "back_button": "Volver al Inicio",
-          "about_title": "Acerca de esta experiencia",
-          "includes_title": "Qué incluye",
-          "duration_label": "Duración",
-          "fee_note": "Sin tarifas ocultas. Pago directo el día del tour."
-        },
-        "aeropuerto": {
-          "image_count": 3,
-          "title": "VIP Airport Transfer (MDE)",
-          "description": "Comienza o termina tu viaje con el máximo confort. Servicio de traslado privado en vehículos premium desde o hacia el Aeropuerto Internacional José María Córdova.",
-          "duration": "45 - 60 Minutos",
-          "includes": [
-            "Transporte Privado VIP",
-            "Conductor profesional bilingüe",
-            "Asistencia con equipaje",
-            "Botellas de agua a bordo"
-          ],
-          "price": 70,
-          "book_button": "Solicitar por WhatsApp",
-          "back_button": "Volver al Inicio",
-          "about_title": "Acerca del servicio",
-          "includes_title": "Qué incluye",
-          "duration_label": "Duración",
-          "fee_note": "Precio por vehículo, no por persona."
-        }
-  },
-  "collection": {
+    "collection": {
       "title": "Experiencias de Autor",
       "subtitle": "Descubre nuestros tours privados cuidadosamente seleccionados en Medellín y Antioquia. Diseñados a tu ritmo.",
       "explore_button": "Ver Detalles"
@@ -108,34 +109,35 @@
     "custom_tour": {
       "title": "Itinerarios a la Medida",
       "subtitle": "¿Buscas algo único? Diseña una experiencia personalizada en Medellín con nuestro concierge privado.",
-      "button": "Contactar ",
+      "button": "Contactar",
       "message": "¡Hola! Me gustaría diseñar un tour privado a la medida en Medellín."
     },
     "about": {
-  "tag": "EL FUNDADOR",
-  "title": "Hola, soy Mateo Restrepo.",
-  "description": "Durante más de 5 años he tenido el privilegio de guiar y transportar a viajeros extranjeros por Medellín. MR Private Tours nació con un propósito claro: ofrecerte una experiencia donde tu seguridad y tranquilidad son nuestra prioridad absoluta. Conocemos la ciudad a la perfección, te protegemos en cada etapa del camino y garantizamos un entorno seguro para que solo te preocupes por disfrutar.\n\nNuestra filosofía es sencilla: 'Take Your Time!'. Mantenemos una logística impecable y un itinerario establecido para aprovechar el día, pero el ritmo lo marcas tú. Sin prisas, sin presiones de grupos grandes. Queremos que vivas la verdadera esencia de Colombia con la exclusividad de un servicio premium diseñado a tu medida.",
-  "reviews_title": "LO QUE DICEN NUESTROS CLIENTES",
-  "google_title": "Experiencias Reales",
-  "google_text": "Descubre por qué viajeros de todo el mundo confían en nosotros para su estadía en Medellín.",
-  "google_button": "Ver reseñas en Google Maps",
-  "reviews": [
-    {
-      "name": "Sarah M.",
-      "text": "¡Increíble experiencia! Mateo nos hizo sentir seguros y cuidados todo el tiempo. Nunca nos sentimos apurados. Verdaderamente 'Take Your Time!' como prometen.",
-      "date": "Hace 2 semanas"
-    },
-    {
-      "name": "James T.",
-      "text": "El mejor servicio VIP en Medellín. El tour a Guatapé superó todas nuestras expectativas y la comodidad del vehículo es de otro nivel.",
-      "date": "Hace 1 mes"
-    },
-    {
-      "name": "Elena R.",
-      "text": "Puntualidad, lujo y seguridad. Nos recogieron en el aeropuerto y desde el primer minuto el trato fue excepcional.",
-      "date": "Hace 2 meses"
+      "tag": "EL FUNDADOR",
+      "title": "Hola, soy Mateo Restrepo.",
+      "paragraph_1": "Durante más de 5 años he tenido el privilegio de guiar y transportar a viajeros extranjeros por Medellín. MR Private Tours nació con un propósito claro: ofrecerte una experiencia donde tu seguridad y tranquilidad son nuestra prioridad absoluta. Conocemos la ciudad a la perfección, te protegemos en cada etapa del camino y garantizamos un entorno seguro para que solo te preocupes por disfrutar.",
+      "paragraph_2": "Nuestra filosofía es sencilla: 'Take Your Time!'. Mantenemos una logística impecable y un itinerario establecido para aprovechar el día, pero el ritmo lo marcas tú. Sin prisas, sin presiones de grupos grandes. Queremos que vivas la verdadera esencia de Colombia con la exclusividad de un servicio premium diseñado a tu medida.",
+      "reviews_title": "LO QUE DICEN NUESTROS CLIENTES",
+      "google_title": "Experiencias Reales",
+      "google_text": "Descubre por qué viajeros de todo el mundo confían en nosotros para su estadía en Medellín.",
+      "google_button": "Ver reseñas en Google Maps",
+      "reviews": [
+        {
+          "initial": "S",
+          "name": "Sofia Hidalgo",
+          "text": "¡Excelente servicio! Una experiencia maravillosa, con atención de primera. ¡Totalmente recomendado para quienes buscan una experiencia única y confiable! Nuestro guardaespaldas, maletero y fotógrafo todo en uno 😂🫶🏻 ¡Gracias Mateo!"
+        },
+        {
+          "initial": "W",
+          "name": "Wanda Mojica",
+          "text": "¡Una experiencia maravillosa! Mateo fue amable, atento y nos hizo sentir cómodas y seguras en todo momento. Lo recomendamos al 100%. Tú solo dile qué lugar quieres visitar y ahí él te llevará 🚘"
+        },
+        {
+          "initial": "J",
+          "name": "Jose Curras",
+          "text": "Es el mejor guía turístico que he tenido en muchos años y he viajado a muchos países. Se los recomiendo al 100%: responsable, seguro y muy confiable 🫡"
+        }
+      ]
     }
-  ]
-}
   }
 }

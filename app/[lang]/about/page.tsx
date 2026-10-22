@@ -2,11 +2,11 @@ import { getDictionary } from "@/app/lib/get-dictionary";
 import Link from "next/link";
 import Image from "next/image";
 
-// Definimos la estructura de la reseña para TypeScript
+// Estructura ajustada para que coincida exactamente con tu archivo JSON
 interface Review {
+  initial: string;
   name: string;
   text: string;
-  date: string;
 }
 
 export default async function AboutPage({
@@ -22,9 +22,9 @@ export default async function AboutPage({
 
   return (
     <main className="min-h-screen bg-[#F2F1EC] py-6 px-4 md:px-8">
-      {/* Contenedor principal ensanchado para el layout 50/50 */}
-      <div className="max-w-6xl mx-auto flex flex-col ">
-        {/* Botón de Volver (Alineado a la izquierda) */}
+      {/* Contenedor principal */}
+      <div className="max-w-6xl mx-auto flex flex-col">
+        {/* Botón de Volver */}
         <div className="w-full">
           <Link
             href={`/${resolvedParams.lang}`}
@@ -46,7 +46,6 @@ export default async function AboutPage({
 
         {/* Hero Section: Texto a la Izquierda / Foto a la Derecha */}
         <div className="flex flex-col-reverse lg:flex-row items-center gap-16 lg:gap-20">
-          {/* Columna Izquierda: Filosofía y Texto */}
           <div className="w-full lg:w-1/2 flex flex-col items-start text-left my-10">
             <span className="block text-[10px] font-bold uppercase tracking-[0.2em] text-[#737772] mb-5">
               {aboutDict.tag}
@@ -54,15 +53,19 @@ export default async function AboutPage({
             <h1 className="text-4xl md:text-5xl lg:text-[64px] font-light text-[#202522] tracking-tight leading-[1.1] mb-8">
               {aboutDict.title}
             </h1>
-            <p className="text-[#737772] text-sm md:text-base font-light leading-relaxed max-w-lg whitespace-pre-line">
-              {aboutDict.description}
-            </p>
+            <div className="flex flex-col gap-4">
+              <p className="text-[#737772] text-sm md:text-base font-light leading-relaxed max-w-lg">
+                {aboutDict.paragraph_1}
+              </p>
+              <p className="text-[#737772] text-sm md:text-base font-light leading-relaxed max-w-lg">
+                {aboutDict.paragraph_2}
+              </p>
+            </div>
           </div>
 
-          {/* Columna Derecha: Fotografía Editorial */}
-          <div className="w-full lg:w-1/2 relative h-[450px] md:h-[550px]  w-full rounded-sm overflow-hidden bg-[#D9D9D2]/30">
+          <div className="w-full lg:w-1/2 relative h-[450px] md:h-[550px] rounded-sm overflow-hidden bg-[#D9D9D2]/30">
             <Image
-              src="/mateo.webp" // Asegúrate de tener esta imagen en tu carpeta public
+              src="/mateo.webp"
               alt="Mateo Restrepo - Founder of MR Medellin Private Tours"
               fill
               priority
@@ -71,7 +74,7 @@ export default async function AboutPage({
           </div>
         </div>
 
-        {/* Citas Editoriales (Reseñas simuladas de Google) */}
+        {/* Citas Editoriales (Reseñas Reales mapeadas desde JSON) */}
         <div className="flex flex-col gap-12 border-t border-[#D9D9D2]/70 pt-20">
           <h2 className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#737772] text-center mb-2">
             {aboutDict.reviews_title}
@@ -83,28 +86,44 @@ export default async function AboutPage({
                 key={idx}
                 className="bg-[#FFFFFF] p-8 md:p-10 rounded-lg flex flex-col justify-between gap-6 shadow-[0_15px_40px_rgba(25,35,30,0.03)] border border-[#D9D9D2]/40"
               >
-                <div className="flex text-[#29483D] mb-1">
-                  {[...Array(5)].map((_, i) => (
-                    <svg
-                      key={i}
-                      width="13"
-                      height="13"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                    >
-                      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                    </svg>
-                  ))}
+                <div className="flex flex-col gap-4">
+                  <div className="flex items-center gap-3">
+                    <div className="w-8 h-8 rounded-full bg-[#29483D] flex items-center justify-center text-white text-xs font-bold">
+                      {review.initial}
+                    </div>
+                    <div className="flex flex-col">
+                      <span className="text-[#202522] text-[13px] font-bold tracking-wide">
+                        {review.name}
+                      </span>
+                      <div className="flex gap-0.5 text-[#FABB05]">
+                        {[...Array(5)].map((_, i) => (
+                          <svg
+                            key={i}
+                            width="12"
+                            height="12"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                          >
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                          </svg>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                  <p className="text-[#202522] text-[13px] font-light leading-relaxed italic">
+                    {review.text}
+                  </p>
                 </div>
-                <p className="text-[#202522] text-[13px] font-light leading-relaxed italic">
-                  {review.text}
-                </p>
-                <div className="pt-4 border-t border-[#D9D9D2]/30 mt-2">
-                  <h4 className="text-[#202522] text-[10px] font-bold tracking-widest uppercase">
-                    {review.name}
-                  </h4>
-                  <span className="text-[#737772] text-[9px] mt-1 block">
-                    {review.date}
+
+                <div className="pt-4 border-t border-[#D9D9D2]/30 mt-2 flex items-center gap-1.5">
+                  <Image
+                    src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
+                    alt="Google"
+                    width={14}
+                    height={14}
+                  />
+                  <span className="text-[#737772] text-[9px] font-medium uppercase tracking-widest">
+                    Google Review
                   </span>
                 </div>
               </div>
